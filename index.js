@@ -15,7 +15,6 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "qr.html")); // Servir o arquivo HTML com o QR code
 });
 
-// Serviço de leitura do QR code
 client.on("qr", (qr) => {
   // Gera um arquivo PNG do QR code
   const qrCodeImage = `https://api.qrserver.com/v1/create-qr-code/?data=${qr}&size=200x200`;
