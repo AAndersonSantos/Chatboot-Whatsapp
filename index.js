@@ -1,3 +1,4 @@
+process.env.PUPPETEER_SKIP_DOWNLOAD = "true";
 const puppeteer = require("puppeteer-extra");
 const qrcode = require("qrcode-terminal");
 const { Client } = require("whatsapp-web.js");
