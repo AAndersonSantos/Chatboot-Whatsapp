@@ -7,7 +7,7 @@ const app = express();
 const client = new Client();
 
 // Rota para exibir o QR code em uma página da web
-app.get("/qr", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(__dirname + "/qr.html"); // Servir o arquivo HTML com o QR code
 });
 
