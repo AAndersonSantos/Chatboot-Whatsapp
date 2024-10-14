@@ -1,3 +1,4 @@
+const puppeteer = require("puppeteer-extra");
 const qrcode = require("qrcode-terminal");
 const { Client } = require("whatsapp-web.js");
 const express = require("express"); // Adicionando o express
